@@ -1,4 +1,4 @@
-# Automated Image Resizing and Transfer System Using AWS Services
+![iam](https://github.com/user-attachments/assets/1fe4ea4f-ee6f-4b71-a308-00e55ad29cfd)# Automated Image Resizing and Transfer System Using AWS Services
 
 ## Project Description:
 This project focuses on building an automated system for image processing and management within the AWS ecosystem. The goal is to streamline the handling of images by automatically resizing them and transferring them to a designated storage location while keeping stakeholders informed through notifications. Key AWS services, such as Lambda, S3, and SNS, are used to orchestrate this workflow.
@@ -23,18 +23,18 @@ This project focuses on building an automated system for image processing and ma
 1. Navigate to the S3 Console.
 2. Follow the Outlined Steps below.
 
+![s33](https://github.com/user-attachments/assets/c5529822-0274-4c91-8b58-f7161d423b1b)
 
-![i1](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/fcf4)
-
-
-![i2](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/)
+![s31](https://github.com/user-attachments/assets/e37a50ef-c618-4afd-9bfd-36ab0e34679c) 
 
 
-![i3](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/8)
+![s3](https://github.com/user-attachments/assets/b9d6a70e-32a2-4e19-981b-59d5972f4762)
+
 
 3. Create the destination bucket using the same steps and name it with a unique name.
 
-![i4](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/)
+![s32](https://github.com/user-attachments/assets/d3856260-b835-404b-9860-9d4b8f955880)
+
 
 4. As you can see above , I created two buckets one is Source bucket and another one is Destination bucket.
 
@@ -44,37 +44,23 @@ This project focuses on building an automated system for image processing and ma
 1. Navigate to the SNS console.
 2. Follow the Outlined Steps below.
 
+![sns](https://github.com/user-attachments/assets/d41d9e94-1014-4a97-9b3c-a8fae3677d63)
 
-![i5](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/4)
+![sns1](https://github.com/user-attachments/assets/f0093dc7-fd5d-4abd-ba66-78f7313dda3f)
 
+![sns2](https://github.com/user-attachments/assets/747fe648-653f-4690-93bc-2ae69c0f1a01)
 
-![i6](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/1440a)
-
-
-
-![i7](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/13)
+![sns3](https://github.com/user-attachments/assets/0c7fa65c-99b5-4932-96af-abcd5de20794)
 
 
-![i8](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098f)
-
-
-![i9](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/6)
-
-
-![i10](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/14bc)
 3. Scroll down and Click "Create subscription" <br>
 4. After this , you will receive some mail for Subscription Confirmation and you have to confirm that.<br>
 5. You can use any other protocols also like SQS, HTTP, SMS etc .,<br>
 
 
-![i11](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/d5)
+![sms](https://github.com/user-attachments/assets/c20fcf81-3bfd-471a-afba-e35858ffcb54)
 
-
-![i12](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/7)
-
-
-![i3](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/70)
-
+![sms1](https://github.com/user-attachments/assets/0159827d-6661-407b-80c1-f29f477ae815)
 
 
 ### Step 3 :
@@ -83,57 +69,48 @@ This project focuses on building an automated system for image processing and ma
 1. Navigate to the Lambda Console.
 2. Follow the Outlined steps below.
 
-![i14](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/asset95)
+![lamb1](https://github.com/user-attachments/assets/554bb3f9-f970-4a50-b265-8569ae2abadc)
 
+![lamb2](https://github.com/user-attachments/assets/353d1b18-4877-48c1-aaf4-93844bfe9d4a)
 
-
-![i15](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/bc)
 
 3. Now replace the default code with the image-resizing-s3.py and deploy the changes , Don't test the code now we have to do some more actions before testing.
 4. After that , We have to give some permission for our Lambda Function to do our process (resizing) , For that navigate to the IAM Console and follow the below steps.
 
+![iam](https://github.com/user-attachments/assets/fd4c76f4-a522-4640-bcbb-eaecd38871b0)
 
-![i16](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/c49c69dc-7e60-4fd1-835c-4b12e)
+![iam1](https://github.com/user-attachments/assets/0c883af5-e950-4305-9546-393f2671fa65)
 
-![i17](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/c983d5ea50434df)
-
-
-![i18](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/asset7d-bb9c-40e6-a4cb-3fb9688fe4b2)
+![iam2](https://github.com/user-attachments/assets/2eb83e20-90ba-4a1a-a722-57e0ed5b6e9a)
 
 
-![i19](https://github.com/itz-mathesh/image-resizing-usis/144098846/e7ab7943-e876-402c-b074-ad3b4873484e)
+![iam3](https://github.com/user-attachments/assets/8456e48f-3632-4aad-a0a1-f73b18aeb5a1)
 
 
-![i20](https://github.com/itz-mathesh/imageng-s3-lambda-and-sns/assets/144098846/70bc666a-cda0-4374-b01f-1c91e5082770)
+![iam4](https://github.com/user-attachments/assets/15498828-c130-4adf-afe2-83c70ecc9f29)
+
+![iam5](https://github.com/user-attachments/assets/181abf65-b9d4-4148-9fad-2c4511733d90)
+
+![iam6](https://github.com/user-attachments/assets/510fa011-f0da-4255-92b1-e0b2cfef3f09)
 
 
-![i21](https://github.com/itz-resizing-using-s3-lambda-and-sns/assets/144098846/d0f40dad-c535-45c0-a19c-402aba93d555)
-
-
-![i22](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/11be7629-4c5c)
+![iam7](https://github.com/user-attachments/assets/c91f2079-0e3c-4bcf-afb5-2b6221d3de29)
 
 5. Now navigate to the Lambda Console and follow the steps below.
 
+![iam8](https://github.com/user-attachments/assets/2248dd55-885b-4cf5-a90e-cf888ffe290b)
 
-![i23](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/14c-455d-ae15-d412b83182fe)
+![iam9](https://github.com/user-attachments/assets/1c59c273-9fc4-43c7-977f-884acb8824e6)
 
-
-![i24](https://github.com/itz-mathesh/image-resizing-using-s3-lambda4098846/fd489e94-5129-4bee-a682-ad24a2685233)
-
-
-![i25](https://github.com/itz-mathesh/image-resi-and-sns/assets/144098846/69779aa0-34d3-4502-9f9e-4ac15331db99)
+![iam10](https://github.com/user-attachments/assets/443e9d3d-6bb9-4d79-985e-38c6c3f2fd12)
 
 
 6. Now we have to trigger the function.
 
 
-![i26](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144090e-681ea507e1d1)
+![trigger](https://github.com/user-attachments/assets/02c08142-dac0-4d15-8d1f-b86920927fc1)
 
-
-![i27](https://github.com/itz-mathesh/image-resizing-using-s8846/b8dcb311-1914-47bc-96a7-5df62a283954)
-
-
-![i28](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144164aba-a478-4590-a7e4-966d3f30078f)
+![trigger1](https://github.com/user-attachments/assets/55050fcd-caba-423a-bc26-c0141c77f26d)
 
 
 7. Now we have to go to code section , and scroll down to  layers.<br>
@@ -142,11 +119,11 @@ This project focuses on building an automated system for image processing and ma
 10. It's because for resize the image we upload in our source S3 bucket , We need a python library called pillow in our code to resize the image . We can manually add Pillow library also, But it's very time consuming and you have to do lot more , Instead of manually adding pillow library we are going to use layers for Some easy action.<br>
 11. Follow the outlined Steps below.
 
+![layer](https://github.com/user-attachments/assets/d9314372-1632-4ba1-8e84-498d9e22bc88)
 
-![i51](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/a4500c08-jdh8a18-4a26-844a-5ad7712ba310)
+![layer1](https://github.com/user-attachments/assets/aef87351-8fa7-4e63-b5c4-7f137d091932)
 
 
-![i52](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/d20cb878-d8a9hgjgj-4757-8f42-7596f5448f0f)
 12.You can copy the arn from below.
 
 ```
@@ -155,15 +132,15 @@ arn:aws:lambda:ap-south-1:770693421928:layer:Klayers-p39-pillow:1
 
 13. After done all the actions above , now we can test our code.
 
-![i49](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/fa884cf6-e858hjg-44c4-ac03-fa4b4c0de763)
+![test](https://github.com/user-attachments/assets/9abef56b-d495-4335-a7d0-03b9f6b6b584)
 
+![test1](https://github.com/user-attachments/assets/d7ad4160-c2f4-405c-b84c-b15295979fa7)
 
-![i50](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/9f13561b-3839-49hjj5e-bf69-9ac34605f3c9)
 
 14. It will show some results like below , It runs successfully but return some error because we still not upload the images in S3 yet.
 
+![test-result](https://github.com/user-attachments/assets/0b039a6f-bc95-440f-8c74-a1859a04031b)
 
-![i50 1](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/d4d73c43-32aa-hgjhj4ada-bed0-3aa30dd053e4)
 
 
 ### Step 4 :
@@ -172,27 +149,18 @@ arn:aws:lambda:ap-south-1:770693421928:layer:Klayers-p39-pillow:1
 1. Navigate to the S3 Console.
 2. Upload Some images in  Source Bucket.
 
+![out](https://github.com/user-attachments/assets/1a99c657-ee2b-46e6-bfad-c62c28397a19)
 
-![i29](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/43f39f6f-dc95-4dhgjf6-a7b2-7b4f7d631642)
+![out1](https://github.com/user-attachments/assets/1b664e4c-29e6-4527-96dc-996b42615c98)
 
+![out2](https://github.com/user-attachments/assets/8a20a117-30d3-4838-91ed-953d250b0c2d)
 
+![out3](https://github.com/user-attachments/assets/386fc57b-a203-497e-88f6-2c49a9d9c016)
 
-![i30](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/4deb12e5-3597-4ebhjhgjhgc-bf28-3b235b058969)
+![out4](https://github.com/user-attachments/assets/2e867750-44ea-402b-8f27-a08aac7413d2)
 
+![output](https://github.com/user-attachments/assets/0784ee57-d1cf-4a18-afcf-b9dd701b1916)
 
-![i31](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/bc0585bd-0e6d-47hjhge3-891b-e5dd3be0da2b)
-
-
-![i32](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/c9eb1a36-198e-4bhgjhjhgj90-be94-0c95c9d877c6)
-
-
-![i33](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/4e827762-b1f7-49d0-90ck,lkje-370ddaac014f)
-
-
-![i34](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/b5933c6c-91d8-4eac-89kljlkj40-389dbd64d101)
-
-
-![i35](https://github.com/itz-mathesh/image-resizing-using-s3-lambda-and-sns/assets/144098846/d7bdb74a-9d8f-4d02-bkjlkj9ad-c1c5e463e75a)
 
 ### It Successfully resized the Image and sends me the Notification.
 
